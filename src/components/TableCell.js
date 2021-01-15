@@ -11,7 +11,7 @@ class TableCell extends Component {
     }
 
     handleColor=()=> {
-        if (this.props.color != this.state.color ) {
+        if (this.props.color !== this.state.color ) {
           this.setState({ color: this.props.color});
         }
     }

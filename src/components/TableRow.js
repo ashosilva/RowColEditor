@@ -10,7 +10,7 @@ class TableRow extends Component {
   }
   componentDidUpdate() {
     if (
-      this.props.color != this.state.color 
+      this.props.color !== this.state.color 
     ) {
       this.setState({ color: this.props.color});
     }
@@ -18,8 +18,8 @@ class TableRow extends Component {
 
   render() {
     let tableCells = []; // pushing the columns
-    for (let i = 0; i < this.props.column; i++) {
-      tableCells.push(<TableCell color={this.state.color} />);
+    for (let i = 0; i < this.props.col; i++) {
+      tableCells.push(<TableCell  key = {i} color={this.props.color} />);
     }
     return <tr>{tableCells}</tr>;
   }
