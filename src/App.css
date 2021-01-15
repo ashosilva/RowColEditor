@@ -1,38 +1,90 @@
-.App {
+/* .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+td,tr {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+} */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(103, 206, 187);
+  font-family: 'Century Gothic',sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+#options{
+  display: flex;
+  flex-direction: row;    
+  align-items: center;
+  align-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#labels
+{
+  display: flex;
+  flex-direction: column;
+  align-items: left;    
+  width: 150px;
+}
+
+#textfields{
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+}
+
+table, td{
+  border: 1px solid black;  
+    
+}       
+  
+td{
+  width: 30px;
+  height: 30px;
+  align-content: center;  
+  
+}
+
+
+#color-options{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  align-content: space-between;   
+  padding: 30px;  
+}
+
+.labelChild{
+  display: flex;
+  flex-direction: column;
+  align-items: left;  
+  height: 22px;
+  
+}
+
+#colorUncolored{
+  width: 120px; 
+}
+
+#colorAll{
+  width: 120px;     
+}
+
+#clearAll{
+  width: 120px;     
+}
+
+#current-values{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}  
+
+#value-rows{
+  width: 120px;
 }
