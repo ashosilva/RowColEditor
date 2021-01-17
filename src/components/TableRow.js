@@ -17,7 +17,7 @@ class TableRow extends Component {
   }
 
   render() {
-    let tableCells = []; // pushing the columns
+    let tableCells = [];
     for (let i = 0; i < this.props.col; i++) {
       tableCells.push(<TableCell  key = {i} color={this.props.color} />);
     }

@@ -10,12 +10,12 @@ class Table extends Component {
       row: this.props.row,
       col: this.props.row
     };
-    // this.handleAddEvent = this.handleAddEvent.bind(this);
+  
   }
 
   componentDidUpdate() {
     if (
-      // if the props and state are different, update the state
+      
       this.props.col !== this.state.col ||
       this.props.row !== this.state.row ||
       this.props.color !== this.state.color
@@ -28,7 +28,7 @@ class Table extends Component {
     let tableRows = [];
     for (let i = 0; i < this.state.row; i++) {
       tableRows.push(<TableRow col={this.state.col} key={i} color= {this.props.color} />);
-    } // this for loop is for pushing all of the rows into an array, so I can render it.
+    } 
     return (
       <div>
         <table>
@@ -46,6 +46,6 @@ class Table extends Component {
     );
   }
 
-  // <table id="table"></table>
+ 
 }
 export default Table;

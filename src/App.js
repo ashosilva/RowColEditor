@@ -20,69 +20,6 @@ class App extends Component {
     this.handleSubmitEvent = this.handleSubmitEvent.bind(this);
   }
 
-  // handleSubmitEvent = e => {
-
-  //   console.log("row: " + this.state.row)
-  //   console.log("col: " + this.state.col)
-
-  //   let addRow = Number(document.querySelector("#addRowT").value);
-  //   let addCol = Number(document.querySelector("#addColT").value);
-  //   let remRow = Number(document.querySelector("#remRowT").value);
-  //   let remCol = Number(document.querySelector("#remColT").value);
-
-  //   console.log("addRow: " + addRow)
-  //   console.log("addCol: " + addCol)
-  //   console.log("remRow: " + remRow)
-  //   console.log("remCol: " + remCol)
-
-
-
-  //   //check for invalid inputs: addRow
-  //   if (addRow < 0) {
-  //     alert("Invalid Input! negative value not allowed!")
-  //   } else if (addRow !== 0 || addRow !== '') {
-  //     this.setState({
-  //       row: this.state.row + addRow
-  //     })
-  //   }
-  //   //check for invalid inputs: addCol
-  //   if (addCol < 0) {
-  //     alert("Invalid Input! negative value not allowed!")
-  //   } else if (addCol !== 0 || addCol !== '') {
-  //     this.setState({
-  //       col: this.state.col + addCol
-  //     })
-  //   }
-
-  //   //check for invalid inputs: remRow
-  //   if (remRow < 0 || remRow > this.state.row) {
-  //     alert("Invalid Input! exceeds the amount of rows to be deleted!")
-  //   } else if (remRow !== 0) {
-  //     this.setState({
-  //       row: this.state.col - remRow
-  //     })
-  //   }
-  //   //check for invalid inputs: remRow
-  //   if (remCol < 0 || remCol > this.state.col) {
-  //     alert("Invalid Input! exceeds the amount of columns to be deleted!")
-  //   } else if (remCol !== 0) {
-  //     this.setState({
-  //       col: this.state.col - remCol
-  //     })
-  //   }
-
-  //   console.log("row: " + this.state.row)
-  //   console.log("col: " + this.state.col)
-
-
-  //   document.querySelector("#dimension").innerText = this.state.row + "X" + this.state.col;
-  //   document.getElementById("addRowT").value = '';
-  //   document.getElementById("addColT").value = '';
-  //   document.getElementById("remRowT").value = '';
-  //   document.getElementById("remColT").value = '';
-
-
-  // }
 
   handleSubmitEvent = (event) => {
     //check for invalid inputs: addRow

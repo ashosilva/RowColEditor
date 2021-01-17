@@ -7,7 +7,6 @@ class TableCell extends Component {
         this.state = {
             color:this.props.color,
         };
-        //this.handleColor = this.handleColor.bind(this);
     }
 
     handleColor=()=> {
